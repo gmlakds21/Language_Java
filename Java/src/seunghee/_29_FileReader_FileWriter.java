@@ -1,9 +1,9 @@
-package after;
+package seunghee;
 
 import java.io.FileReader;
 import java.io.FileWriter;
 
-public class _15_FileReader_FileWriter {
+public class _29_FileReader_FileWriter {
 	public static void main(String[] args) {
 
 		FileWriter fw = null;
@@ -12,7 +12,7 @@ public class _15_FileReader_FileWriter {
 		
 		try {
 			/* FileWriter */
-			fw = new FileWriter("reader.txt");
+			fw = new FileWriter("text_29.txt");
 			fw.write('A');
 			char buf[] = {'B', 'C', 'D', 'E', 'F', 'G'};
 			
@@ -24,7 +24,7 @@ public class _15_FileReader_FileWriter {
 			fw.close();
 		
 			/* FileReader */
-			fr = new FileReader("reader.txt");
+			fr = new FileReader("text_29.txt");
 			while((i = fr.read()) != -1) {
 				System.out.print((char)i);
 			}

@@ -1,11 +1,11 @@
-package after;
+package seunghee;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 
-public class _17_BufferedInputStream_BufferOutputStream {
+public class _31_BufferedInputStream_BufferOutputStream {
 	public static void main(String[] args) {
 		
 		FileInputStream fis = null;
@@ -13,12 +13,11 @@ public class _17_BufferedInputStream_BufferOutputStream {
 		BufferedInputStream bis = null;
 		BufferedOutputStream bos = null;
 		
-		
 		try {
 			
-			fis = new FileInputStream("input.txt");
+			fis = new FileInputStream("text_31.txt");
 			bis = new BufferedInputStream(fis);
-			fos = new FileOutputStream("input3.txt");
+			fos = new FileOutputStream("text_31.txt");
 			bos = new BufferedOutputStream(fos);
 			
 			int i;

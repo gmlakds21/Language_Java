@@ -1,6 +1,6 @@
-package after;
+package seunghee;
 
-public class _12_inOut {
+public class _26_inOut {
 	public static void main(String[] args) {
 		
 		int i;

@@ -1,9 +1,9 @@
-package after;
+package seunghee;
 
 import java.io.File;
 import java.io.IOException;
 
-public class _20_File {
+public class _34_File {
 	public static void main(String[] args) throws IOException {
 		
 		File file = new File("C:\\SeungHee\\testFile.txt");

@@ -1,12 +1,12 @@
-package after;
+package seunghee;
 
 import java.io.IOException;
 import java.io.RandomAccessFile;
 
-public class _21_RandomAccessFile {
+public class _35_RandomAccessFile {
 	public static void main(String[] args) throws IOException {
 		
-		RandomAccessFile rf = new RandomAccessFile("random.txt", "rw");
+		RandomAccessFile rf = new RandomAccessFile("text_35.txt", "rw");
 		
 		rf.writeInt(100);
 		System.out.println("파일 포인터 위치 : " + rf.getFilePointer());

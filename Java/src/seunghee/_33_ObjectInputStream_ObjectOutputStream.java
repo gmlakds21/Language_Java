@@ -1,20 +1,21 @@
-package after;
+package seunghee;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
+import java.io.Serializable;
 
-public class _19_ObjectInputStream_ObjectOutputStream {
+public class _33_ObjectInputStream_ObjectOutputStream {
 	public static void main(String[] args) {
 				
 		try {
-			FileOutputStream fos = new FileOutputStream("VO.txt");
+			FileOutputStream fos = new FileOutputStream("text_33.txt");
 			ObjectOutputStream oos = new ObjectOutputStream(fos);
 						
 			// 객체 생성
-			Person p1 = new Person("Kim", 20);
-			Person p2 = new Person("Lee", 30);
+			Person_33 p1 = new Person_33("Kim", 20);
+			Person_33 p2 = new Person_33("Lee", 30);
 			
 			// 객체 주입
 			oos.writeObject(p1);
@@ -25,12 +26,12 @@ public class _19_ObjectInputStream_ObjectOutputStream {
 		}
 		
 		try {
-			FileInputStream fis = new FileInputStream("VO.txt");
+			FileInputStream fis = new FileInputStream("text_33.txt");
 			ObjectInputStream ois = new ObjectInputStream(fis);			
 			
 			// 객체 읽기
-			Person p3 = (Person) ois.readObject();
-			Person p4 = (Person) ois.readObject();
+			Person_33 p3 = (Person_33) ois.readObject();
+			Person_33 p4 = (Person_33) ois.readObject();
 			
 			// 객체 확인
 			System.out.println(p3.name);
@@ -40,5 +41,15 @@ public class _19_ObjectInputStream_ObjectOutputStream {
 			e.printStackTrace();
 		}
 		
+	}
+}
+
+class Person_33 implements Serializable{
+	String name;
+	int age;
+	
+	public Person_33(String name, int age) {
+		this.name = name;
+		this.age = age;
 	}
 }

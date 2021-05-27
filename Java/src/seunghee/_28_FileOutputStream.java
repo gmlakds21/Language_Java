@@ -1,9 +1,9 @@
-package after;
+package seunghee;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 
-public class _14_FileOutputStream {
+public class _28_FileOutputStream {
 	public static void main(String[] args) {
 		
 		/* FileOutputStream */
@@ -14,13 +14,13 @@ public class _14_FileOutputStream {
 		
 		try {
 			/* 한글자씩 입력하기 */ {
-				fos = new FileOutputStream("output.txt");
+				fos = new FileOutputStream("text_28.txt");
 				fos.write(65);
 				fos.write(66);
 				fos.write(67);
 
 				/* 출력부분 */
-				fis = new FileInputStream("output.txt");
+				fis = new FileInputStream("text_28.txt");
 				while((i = fis.read()) != -1) {
 					System.out.print((char)i);
 				}
@@ -28,7 +28,7 @@ public class _14_FileOutputStream {
 			}
 			
 			/* byte[] 로 입력하기 */ {
-				fos = new FileOutputStream("output.txt");
+				fos = new FileOutputStream("text_28.txt");
 				byte[] bs = new byte[26];
 				for(int k=0; k<26; k++) {
 					bs[k] = (byte)(k+65);
@@ -36,7 +36,7 @@ public class _14_FileOutputStream {
 				fos.write(bs);
 				
 				/* 출력부분 */
-				fis = new FileInputStream("output.txt");
+				fis = new FileInputStream("text_28.txt");
 				while((i = fis.read()) != -1) {
 					System.out.print((char)i);
 				}

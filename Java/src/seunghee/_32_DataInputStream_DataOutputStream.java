@@ -1,17 +1,17 @@
-package after;
+package seunghee;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 
-public class _18_DataInputStream_DataOutputStream {
+public class _32_DataInputStream_DataOutputStream {
 	public static void main(String[] args) {
 		
 		try {
-			FileInputStream fis = new FileInputStream("test.txt");
+			FileInputStream fis = new FileInputStream("text_32.txt");
 			DataInputStream dis = new DataInputStream(fis);
-			FileOutputStream fos = new FileOutputStream("test.txt");
+			FileOutputStream fos = new FileOutputStream("text_32.txt");
 			DataOutputStream dos = new DataOutputStream(fos);
 			
 			System.out.println("Start");
