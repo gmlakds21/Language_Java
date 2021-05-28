@@ -2,6 +2,8 @@ package seunghee.Ex._1_Number;
 
 public class _01 {
     public static void main(String[] args) {
+    	
+    	// Sum = 7 + 7 + 7 + ... + 7
 
         int num = 10;
         int sum = 0;

@@ -3,6 +3,8 @@ package seunghee.Ex._1_Number;
 public class _02 {
     public static void main(String[] args) {
 
+    	// Sum = 1 + 2 + 3 + 4 + ... + NUM
+    	
         int num = 10;
         int sum = 0;
 
