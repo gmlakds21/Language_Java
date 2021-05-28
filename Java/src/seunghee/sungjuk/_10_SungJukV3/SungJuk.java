@@ -1,8 +1,8 @@
-package seunghee.sungjuk;
+package seunghee.sungjuk._10_SungJukV3;
 
 import java.util.Scanner;
 
-public class _10_SungJukV3 {
+public class SungJuk {
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);

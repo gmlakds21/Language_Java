@@ -1,6 +1,6 @@
-package seunghee.sungjuk;
+package seunghee.sungjuk._07_SungJukV1;
 
-public class _07_SungJukV1 {
+public class SungJuk {
 	public static void main(String[] args) {
 		
 		String name = "유재석";
