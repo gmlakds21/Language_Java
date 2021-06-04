@@ -13,10 +13,10 @@ public class _24_HashSet {
 		// 약식
 		HashSet<String> sSet = new HashSet<>();
 		// 정적 배열 - 동적 배열
-		Person[] voArr = {
-				new Person("김연아", 20),
-				new Person("유재석", 25)};
-		HashSet<Person> voSet = new HashSet<>(Arrays.asList(voArr));
+		Person_24[] voArr = {
+				new Person_24("김연아", 20),
+				new Person_24("유재석", 25)};
+		HashSet<Person_24> voSet = new HashSet<>(Arrays.asList(voArr));
 		
 		System.out.println("크기");
 		System.out.println(iSet.size());
@@ -31,13 +31,13 @@ public class _24_HashSet {
 		sSet.add("Hello");
 		sSet.add("Hi");
 		sSet.add("Nice");
-		voSet.add(new Person("하하", 30));
+		voSet.add(new Person_24("하하", 30));
 
 		// 수정
 		// 보통은 remove 이후 add
-		Iterator<Person> iter1 = voSet.iterator();
+		Iterator<Person_24> iter1 = voSet.iterator();
 		while(iter1.hasNext()) {
-			Person vo = iter1.next();
+			Person_24 vo = iter1.next();
 			if(vo.name.equals("유재석")) {
 				vo.name = "무재식";
 			}
@@ -52,7 +52,7 @@ public class _24_HashSet {
 		for(Integer num : iSet) {
 			System.out.println(num);
 		}
-		for(Person vo : voSet) {
+		for(Person_24 vo : voSet) {
 			System.out.println(vo.name);
 		}
 		Iterator<Integer> iIter = iSet.iterator();
@@ -60,9 +60,9 @@ public class _24_HashSet {
 			int num = iIter.next();
 			System.out.println(num);
 		}
-		Iterator<Person> voIter = voSet.iterator();
+		Iterator<Person_24> voIter = voSet.iterator();
 		while(voIter.hasNext()) {
-			Person vo = voIter.next();
+			Person_24 vo = voIter.next();
 			System.out.println(vo.name);
 		}
 		System.out.println();
@@ -70,9 +70,9 @@ public class _24_HashSet {
 		// 제거
 		iSet.remove(20);
 		sSet.remove("Hi");
-		Iterator<Person> iter2 = voSet.iterator();
+		Iterator<Person_24> iter2 = voSet.iterator();
 		while(iter2.hasNext()) {
-			Person vo = iter2.next();
+			Person_24 vo = iter2.next();
 			if(vo.name.equals("유재석")) {
 				voSet.remove(vo);
 			}

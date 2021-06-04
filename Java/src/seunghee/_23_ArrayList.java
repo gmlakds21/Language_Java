@@ -14,10 +14,10 @@ public class _23_ArrayList {
 		// 약식
 		ArrayList<String> sList = new ArrayList<>();
 		// 정적 배열 - 동적 배열
-		Person[] voArr = {
-				new Person("김연아", 20),
-				new Person("유재석", 25)};
-		ArrayList<Person> voList = new ArrayList<>(Arrays.asList(voArr));
+		Person_23[] voArr = {
+				new Person_23("김연아", 20),
+				new Person_23("유재석", 25)};
+		ArrayList<Person_23> voList = new ArrayList<>(Arrays.asList(voArr));
 		
 		System.out.println("크기");
 		System.out.println(iList.size());
@@ -32,11 +32,11 @@ public class _23_ArrayList {
 		sList.add("Hello");
 		sList.add("Hi");
 		sList.add("Nice");
-		voList.add(new Person("하하", 30));
+		voList.add(new Person_23("하하", 30));
 		
 		// 위치 지정 추가
 		iList.add(1, 24);
-		voList.add(2, new Person("전소민", 20));
+		voList.add(2, new Person_23("전소민", 20));
 		
 		// 추출
 		System.out.println(iList.get(1));
@@ -59,7 +59,7 @@ public class _23_ArrayList {
 		// 수정
 		iList.set(1,  23);
 		sList.set(2,  "Nice!");
-		voList.set(2, new Person("이광수", 25));
+		voList.set(2, new Person_23("이광수", 25));
 		System.out.println(iList.get(1));
 		System.out.println(sList.get(2));
 		System.out.println(voList.get(2).name);
@@ -69,7 +69,7 @@ public class _23_ArrayList {
 		for(Integer num : iList) {
 			System.out.println(num);
 		}
-		for(Person vo : voList) {
+		for(Person_23 vo : voList) {
 			System.out.println(vo.name);
 		}
 		Iterator<Integer> iIter = iList.iterator();
@@ -77,9 +77,9 @@ public class _23_ArrayList {
 			int num = iIter.next();
 			System.out.println(num);
 		}
-		Iterator<Person> voIter = voList.iterator();
+		Iterator<Person_23> voIter = voList.iterator();
 		while(voIter.hasNext()) {
-			Person vo = voIter.next();
+			Person_23 vo = voIter.next();
 			System.out.println(vo.name);
 		}
 		System.out.println();

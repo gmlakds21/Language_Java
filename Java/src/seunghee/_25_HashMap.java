@@ -10,7 +10,7 @@ public class _25_HashMap {
 		HashMap<Integer, Integer> iMap = new HashMap<Integer, Integer>();
 		// 약식
 		HashMap<String, String> sMap = new HashMap<>();
-		HashMap<Integer, Person> voMap = new HashMap<>();
+		HashMap<Integer, Person_25> voMap = new HashMap<>();
 		
 		System.out.println("크기");
 		System.out.println(iMap.size());
@@ -25,12 +25,12 @@ public class _25_HashMap {
 		sMap.put("moring", "Hello");
 		sMap.put("evening", "Hi");
 		sMap.put("meet", "Nice");
-		voMap.put(3, new Person("하하", 30));
+		voMap.put(3, new Person_25("하하", 30));
 
 		// 수정
 		iMap.replace(1,24);
 		sMap.replace("meet", "Happy");
-		voMap.replace(3, new Person("하하", 20));
+		voMap.replace(3, new Person_25("하하", 20));
 		
 		// 추출
 		System.out.println(iMap.containsKey(2));
